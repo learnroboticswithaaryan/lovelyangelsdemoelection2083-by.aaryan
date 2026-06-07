@@ -3,85 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lovely Angels English Boarding School Election</title>
+<title>Lovely Angels English Boarding School Election 2083</title>
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="bg-animation"></div>
+
 <div class="container">
 
-    <h1>🏫 Lovely Angels English Boarding School</h1>
-    <h2>Student Election Voting System</h2>
+    <div class="header">
+        <h1>🏫 Lovely Angels English Boarding School</h1>
+        <h2>Student Election 2083</h2>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="step-text">
+            Step <span id="stepNumber">1</span> of 8
+        </div>
+    </div>
 
     <form id="voteForm">
 
-        <div class="section">
+        <!-- STEP 1 -->
+
+        <div class="step active">
+
             <h3>School Captain</h3>
-            <label><input type="radio" name="captain"> ⭐ Star</label>
-            <label><input type="radio" name="captain"> 🦅 Eagle</label>
+
+            <div class="cards">
+
+                <label class="card">
+                    <input type="radio" name="captain" value="Star">
+                    <span class="symbol">⭐</span>
+                    <p>Star</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="captain" value="Eagle">
+                    <span class="symbol">🦅</span>
+                    <p>Eagle</p>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="section">
+        <!-- STEP 2 -->
+
+        <div class="step">
+
             <h3>School Vice Captain</h3>
-            <label><input type="radio" name="vicecaptain"> 🚀 Rocket</label>
-            <label><input type="radio" name="vicecaptain"> 📚 Book</label>
+
+            <div class="cards">
+
+                <label class="card">
+                    <input type="radio" name="vicecaptain" value="Rocket">
+                    <span class="symbol">🚀</span>
+                    <p>Rocket</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="vicecaptain" value="Book">
+                    <span class="symbol">📚</span>
+                    <p>Book</p>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="section">
+        <!-- STEP 3 -->
+
+        <div class="step">
+
             <h3>Child Club President</h3>
-            <label><input type="radio" name="president"> 🏆 Trophy</label>
-            <label><input type="radio" name="president"> 🌳 Tree</label>
-            <label><input type="radio" name="president"> 🌞 Sun</label>
-            <label><input type="radio" name="president"> 🔔 Bell</label>
+
+            <div class="cards">
+
+                <label class="card">
+                    <input type="radio" name="president" value="Trophy">
+                    <span class="symbol">🏆</span>
+                    <p>Trophy</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="president" value="Tree">
+                    <span class="symbol">🌳</span>
+                    <p>Tree</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="president" value="Sun">
+                    <span class="symbol">🌞</span>
+                    <p>Sun</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="president" value="Bell">
+                    <span class="symbol">🔔</span>
+                    <p>Bell</p>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="section">
+        <!-- STEP 4 -->
+
+        <div class="step">
+
             <h3>Child Club Vice President</h3>
-            <label><input type="radio" name="vicepresident"> 🎯 Target</label>
-            <label><input type="radio" name="vicepresident"> 🕊️ Dove</label>
-            <label><input type="radio" name="vicepresident"> ⚽ Football</label>
+
+            <div class="cards">
+
+                <label class="card">
+                    <input type="radio" name="vicepresident" value="Target">
+                    <span class="symbol">🎯</span>
+                    <p>Target</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="vicepresident" value="Dove">
+                    <span class="symbol">🕊️</span>
+                    <p>Dove</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="vicepresident" value="Football">
+                    <span class="symbol">⚽</span>
+                    <p>Football</p>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="section">
+        <!-- STEP 5 -->
+
+        <div class="step">
+
             <h3>Secretary</h3>
-            <label><input type="radio" name="secretary"> ✏️ Pencil</label>
-            <label><input type="radio" name="secretary"> 🖥️ Computer</label>
-            <label><input type="radio" name="secretary"> 📖 Open Book</label>
-            <label><input type="radio" name="secretary"> 🎓 Graduation Cap</label>
+
+            <div class="cards">
+
+                <label class="card">
+                    <input type="radio" name="secretary" value="Pencil">
+                    <span class="symbol">✏️</span>
+                    <p>Pencil</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="secretary" value="Computer">
+                    <span class="symbol">🖥️</span>
+                    <p>Computer</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="secretary" value="BookOpen">
+                    <span class="symbol">📖</span>
+                    <p>Open Book</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="secretary" value="Cap">
+                    <span class="symbol">🎓</span>
+                    <p>Graduation Cap</p>
+                </label>
+
+            </div>
+
         </div>
 
-        <div class="section">
+        <!-- STEP 6 -->
+
+        <div class="step">
+
             <h3>Treasurer</h3>
-            <label><input type="radio" name="treasurer"> 💰 Money Bag</label>
-            <label><input type="radio" name="treasurer"> 🏦 Bank</label>
-        </div>
 
-        <div class="section">
-            <h3>Members</h3>
+            <div class="cards">
 
-            <label><input type="checkbox"> 🌹 Rose</label>
-            <label><input type="checkbox"> 🍀 Clover</label>
-            <label><input type="checkbox"> 🌈 Rainbow</label>
-            <label><input type="checkbox"> 🦋 Butterfly</label>
-            <label><input type="checkbox"> 🌙 Moon</label>
-            <label><input type="checkbox"> ⚡ Lightning</label>
-            <label><input type="checkbox"> 🎸 Guitar</label>
-            <label><input type="checkbox"> 🏅 Medal</label>
-            <label><input type="checkbox"> 🚲 Bicycle</label>
-            <label><input type="checkbox"> 🧩 Puzzle</label>
-            <label><input type="checkbox"> 🏀 Basketball</label>
-            <label><input type="checkbox"> 🎨 Palette</label>
+                <label class="card">
+                    <input type="radio" name="treasurer" value="Money">
+                    <span class="symbol">💰</span>
+                    <p>Money Bag</p>
+                </label>
+
+                <label class="card">
+                    <input type="radio" name="treasurer" value="Bank">
+                    <span class="symbol">🏦</span>
+                    <p>Bank</p>
+                </label>
+
+            </div>
 
         </div>
 
-        <button type="button" onclick="submitVote()">
-            Submit Vote
-        </button>
+        <!-- STEP 7 -->
+
+        <div class="step">
+
+            <h3>Select Exactly 4 Members</h3>
+
+            <div class="cards members-grid">
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Rose"><span class="symbol">🌹</span><p>Rose</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Clover"><span class="symbol">🍀</span><p>Clover</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Rainbow"><span class="symbol">🌈</span><p>Rainbow</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Butterfly"><span class="symbol">🦋</span><p>Butterfly</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Moon"><span class="symbol">🌙</span><p>Moon</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Lightning"><span class="symbol">⚡</span><p>Lightning</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Guitar"><span class="symbol">🎸</span><p>Guitar</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Medal"><span class="symbol">🏅</span><p>Medal</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Bicycle"><span class="symbol">🚲</span><p>Bicycle</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Puzzle"><span class="symbol">🧩</span><p>Puzzle</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Basketball"><span class="symbol">🏀</span><p>Basketball</p></label>
+
+                <label class="card member-card"><input class="member-option" type="checkbox" value="Palette"><span class="symbol">🎨</span><p>Palette</p></label>
+
+            </div>
+
+        </div>
+
+        <!-- STEP 8 -->
+
+        <div class="step">
+
+            <h3>Review & Submit</h3>
+
+            <div id="reviewBox"></div>
+
+            <button type="submit" class="submit-btn">
+                Submit Vote
+            </button>
+
+        </div>
+
+        <div class="navigation">
+
+            <button type="button" id="prevBtn">
+                Previous
+            </button>
+
+            <button type="button" id="nextBtn">
+                Next
+            </button>
+
+        </div>
 
     </form>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
